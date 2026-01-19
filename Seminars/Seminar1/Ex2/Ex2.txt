@@ -1,0 +1,4 @@
+Code a program that writes 100 random integers in text format (separated by
+commas), and in binary. Compare the content, and size of the files. The path of the
+files is given as a command line argument (Note, you can use the function rand from
+stdlib.h, sprintf from stdio.h to generate a formatted string)
