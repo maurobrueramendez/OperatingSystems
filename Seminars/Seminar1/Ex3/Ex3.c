@@ -68,6 +68,7 @@ int main(int argc, char *argv[]) {
 
             int value;
             int consumed = 0;
+            
             if(sscanf(&carry[pos], "%d%n", &value, &consumed) == 1) {
                 sum += value;
                 pos += consumed;
