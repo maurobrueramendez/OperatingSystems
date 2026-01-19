@@ -1,0 +1,3 @@
+Use lseek to traverse a file backwards, reading it and outputting its content in the
+standard output. [Extra: you can only use the option SEEK_END once, and the rest
+of the lseek calls need to use SEEK_CUR]

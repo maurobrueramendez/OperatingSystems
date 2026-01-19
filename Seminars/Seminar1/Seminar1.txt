@@ -1,0 +1,8 @@
+I/O, files and directories
+
+The main objective of this seminar is to use system calls in C to do low-level access to files
+in the POSIX standard, using system calls and pointers. The system calls that you will use in
+this seminar are the ones for files (open, close, read, write, lseek), and those related to
+directories (opendir, closedir, readdir, mkdir). Remember that in this course you are not
+allowed to use the printf and scanf directly, you will need to use read/write with sprint/sscanf
+to generate the strings, and then read/write to the file descriptor.
