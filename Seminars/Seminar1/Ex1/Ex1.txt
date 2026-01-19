@@ -1,0 +1,5 @@
+Write a command (or program) that reads text from standard input until the input
+stream is closed (EOF). The program must count the number of times the character
+'a' appears in the input and write the final count to standard output. [Remember
+that you have to press ctrl + D to indicate that you have finished writing in the
+standard input]
