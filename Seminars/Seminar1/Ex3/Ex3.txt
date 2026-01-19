@@ -1,0 +1,6 @@
+Write a program that reads a sequence of numbers (as text) from standard input
+until the input stream is closed (EOF). The integers are separated by newlines. The
+program must convert them to binary integers, and compute the sum of all integers
+read and write, in binary the final accumulated result to a file whose path is given as
+a command line argument. [Hint: you can use the command line program hexdump
+to visualize the content of a file with binary data.]
