@@ -1,0 +1,9 @@
+Write a C program to write into a file, writing (with write) has to be performed by the
+parent process and the child process. To do so, first open the file, then create the child
+process. Next, use the output from the fork function to establish the writing of the child
+and the parent processes. So, write “World” in the child’s process and “Hello” in the
+parent’s process, delay each write function using usleep by the 4 digits of each of
+their PID, meaning if their PID is 23456, delay for 2345 microseconds.
+
+Now, after executing the fork function, open the file. What happens, and how can
+this behavior be justified? Make different tests varying the delays.

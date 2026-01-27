@@ -1,0 +1,4 @@
+Write a C program that allows communication between the parent and a child using a
+pipe. To do so, communicate the PID of a parent process to its child using a pipe.
+Then tests that the child properly got the PID of the parent using the system call
+getppid.

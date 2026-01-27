@@ -1,0 +1,11 @@
+The main objective of this seminar is to provide a basic understanding of the processes
+management within an operating system. In theory, you have covered concepts such as CPU
+scheduling, virtual memory, process control block, context switching and multiprocessing, these
+concepts will be needed to understand the underlying behavior of these seminar exercises.
+
+The following exercises are to be solved in C by using the functions explained in class. For their
+detail check in aula global “Process management - System calls”, so the seminar should be
+mainly completed by using the following system calls: fork, wait, getpid, getppid, sleep,
+usleep, pipe, and dup2
+The list of exercises has two parts, the first to be done during the seminar class and the second
+for the students to deepen their understanding working at home.

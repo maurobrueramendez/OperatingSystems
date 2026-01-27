@@ -1,0 +1,9 @@
+a. Write a C program that creates 100 processes which all wait 1 second (using the
+function sleep) and the father waits for them to finish at the end after their creation, you
+can use the function wait at the parent’s side to wait for all the children to finish.
+
+b. Modify the program so that the waiting of 1 second is done by processes started
+with execvp which simply run the shell command “sleep 1”
+
+c. Modify the program so that the waiting is of a 1 millisecond (use usleep), but
+the father needs to wait until a child finishes, before starting the next one.
