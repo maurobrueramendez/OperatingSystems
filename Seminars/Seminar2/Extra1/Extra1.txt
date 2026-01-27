@@ -1,0 +1,3 @@
+Write a C program that creates a number of processes according to a command line
+argument. Each created process must execute the command line “ps PID” where PID is
+its own PID value, then it has to wait for all processes to finish.
