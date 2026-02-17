@@ -1,0 +1,20 @@
+Assume you have to develop a simple resource management system to limit the amount
+of services querying into a database, which for this exercise will be 5. Hence, create 20
+threads that will aim to access the database, but they will need to wait if there are
+already 5 threads sending a query to the database. To simulate the access to the
+database, you can use the following function:
+
+#define NUM_RESOURCES 5
+int nThreadsAccessing = 0;
+
+int getFromDatabase() {
+    nThreadsAccessing++;
+    printf("Number of Threads accessing the DB = %d\n",
+    nThreadsAccessing);
+    if (nThreadsAccessing > NUM_RESOURCES) _exit(1);
+    usleep(rand()%10000);
+    nThreadsAccessing--;
+    return rand();
+}
+
+Use a semaphore to provide the proper control

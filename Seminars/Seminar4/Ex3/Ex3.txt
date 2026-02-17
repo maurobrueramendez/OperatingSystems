@@ -1,0 +1,19 @@
+There is an array (A[10]) in which each position has a random value from 0 to 2. The
+values represent the number of particles that are in a specific moment in a specific
+position (cell). Implement a threaded “particle” move operation: void * move(void
+arg), which arg is a struct containing to integers i and j, so that if in cell i there are
+more than 0 particles, the function moves one of the particles in i to the cell with index
+j.
+
+a. Create the number of threads required to move simultaneously a particle from
+each even cell to the next greater odd cell, meaning from cell 0 one particle
+moves to cell 1, from cell 2 one particle moves from cell 3, etc. Do you need any
+synchronization mechanism?
+
+b. Now assume 10 particles move, but decide randomly from which cell to which
+other cell they move. Hence no specific order needs to be preserved. Do you
+need any synchronization mechanism?
+
+c. Now assume that a gust of wind blows from the cell with the lowest index, moving
+particles from all cells to the next higher index cell. From the ninth cell they can’t
+move. Do you need any synchronization mechanism? How would you do it?

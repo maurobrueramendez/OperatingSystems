@@ -1,0 +1,7 @@
+Set a global array A[100] to the square of its index, meaning A[i] = i*i, using a
+thread per cell.
+a. To do so, pass the address of the index to the thread function. What’s the result?
+What has happened?
+b. Now, pass a pointer to a copy of the index value. To do so, you can allocate the
+required space using malloc, and then copy the value of the index into the
+pointer. Remember to free the pointer. What’s the result? What has happened?

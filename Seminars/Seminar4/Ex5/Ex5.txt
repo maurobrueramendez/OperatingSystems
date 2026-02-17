@@ -1,0 +1,12 @@
+[Challenging exercise] Assume exercise 4, but now consider that threads can have 3
+rankings (1, 2, and 3), the thread ranking is specified at the beginning of the thread
+function. The value of the thread ranking (which is determined randomly) specifies the
+number of resources that are taken from the database, meaning that if a thread has a
+ranking 3, it uses the database as if there were 3 threads of ranking 1. Implement a
+resource management system with a mutex and a condition variable (monitors) to
+control the usage of the database. There is no need for any type of optimization pattern
+of the resource usage, a first-come first-served strategy is enough.
+To do so, create a request_resources function that prints the thread id, its rank and
+the resources available, specifying if resources were acquired or not. Similarly, create a
+relase_resources function that specifies the thread id, its rank, and the number of
+resources released, as well as the number of resources available.

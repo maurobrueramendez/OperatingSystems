@@ -1,0 +1,9 @@
+Wind shift
+
+All cells move simultaneously → conflicts everywhere.
+
+Solution:
+
+use mutex OR
+
+compute into a temporary array then copy back.
