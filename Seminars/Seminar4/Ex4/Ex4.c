@@ -1,42 +1,49 @@
 #include <pthread.h>
-#include <semaphore.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
 
+#include "semaphore.h"   
+
 #define NUM_RESOURCES 5
+#define NTHREADS 20
 
 int nThreadsAccessing = 0;
-sem_t sem;
+Semaphore sem;           
 
-int getFromDatabase() {
+int getFromDatabase(void) {
     nThreadsAccessing++;
     printf("Accessing: %d\n", nThreadsAccessing);
 
     if (nThreadsAccessing > NUM_RESOURCES) _exit(1);
 
-    usleep(rand()%10000);
+    usleep(rand() % 10000);
 
     nThreadsAccessing--;
     return rand();
 }
 
 void* worker(void* arg) {
+    (void)arg;
+
     sem_wait(&sem);
     getFromDatabase();
     sem_post(&sem);
+
     return NULL;
 }
 
-int main() {
-    pthread_t th[20];
-    sem_init(&sem, 0, NUM_RESOURCES);
+int main(void) {
+    pthread_t th[NTHREADS];
 
-    for (int i = 0; i < 20; i++)
+    sem_init(&sem, NUM_RESOURCES);
+
+    for (int i = 0; i < NTHREADS; i++)
         pthread_create(&th[i], NULL, worker, NULL);
 
-    for (int i = 0; i < 20; i++)
+    for (int i = 0; i < NTHREADS; i++)
         pthread_join(th[i], NULL);
 
     sem_destroy(&sem);
+    return 0;
 }

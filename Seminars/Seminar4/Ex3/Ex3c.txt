@@ -7,3 +7,5 @@ Solution:
 use mutex OR
 
 compute into a temporary array then copy back.
+
+Synchronisation mechanism needed.
