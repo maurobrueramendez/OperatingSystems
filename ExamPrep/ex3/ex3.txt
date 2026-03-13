@@ -1,0 +1,4 @@
+Exercise
+
+You have 4 threads, 
+and each thread must increment a shared global variable counter 1000 times safely.

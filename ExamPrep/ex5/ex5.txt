@@ -1,0 +1,36 @@
+Write a program that receives as argument a file containing integers separated 
+by spaces or newlines. The program must create 4 threads. Each thread processes 
+one quarter of the integers, computes a partial sum, and then adds it to a global 
+sum safely. At the end, the main thread prints the total sum.
+
+Requirements
+
+    Use pthread_create and pthread_join
+
+    Pass thread arguments using a struct
+
+    Protect the global sum correctly
+
+    Put the compile/run commands as comments at the top
+
+You may assume
+
+    The file contains exactly 400 integers
+
+    They are already loaded into an array int arr[400];
+
+    You do not need to write file-reading code
+
+    Focus on the threading part only
+
+Expected structure
+
+    global declarations
+
+    ThreadArg struct
+
+    worker function
+
+    main thread creation / join loop
+
+    final printf

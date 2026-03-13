@@ -1,0 +1,5 @@
+Exercise
+
+The parent creates one child.
+The child executes ls and sends its output to the parent through a pipe.
+The parent reads from the pipe and prints the result.

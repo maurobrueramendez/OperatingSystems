@@ -1,0 +1,7 @@
+Exercise
+
+The parent creates 2 children.
+
+Each child writes its PID to the parent through a pipe.
+
+The parent reads the two PIDs and prints them.

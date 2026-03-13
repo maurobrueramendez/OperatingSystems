@@ -1,0 +1,15 @@
+Write a program where:
+
+1️ The parent creates two pipes
+
+2️ The parent forks a child
+
+3️ The parent sends an integer x to the child
+
+4️ The child computes:
+
+x * 2
+
+5️ The child sends the result back to the parent
+
+6️ The parent prints the result

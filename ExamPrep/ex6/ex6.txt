@@ -1,0 +1,11 @@
+Write a program where:
+
+    the parent creates one child
+
+    the child executes ls
+
+    the child’s output is redirected to a pipe
+
+    the parent reads from the pipe and prints the output
+
+    the parent waits for the child

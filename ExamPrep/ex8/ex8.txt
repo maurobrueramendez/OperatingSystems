@@ -1,0 +1,7 @@
+In this exercise, you will create a parent that creates a child, and communicates with
+it via a pipe.
+
+• The child will execute the programm “ls” (remember execvp), redirecting its
+standard output to a pipe.
+• The parent will read from the pipe until it’s empty, and write its full content to the
+file “out.txt”

@@ -1,0 +1,5 @@
+You want to create 4 threads, and each thread should print:
+
+Hello from thread i
+
+where i is the thread number.

@@ -1,0 +1,13 @@
+Consider an array arr containing 400 integers.
+
+Write a program that creates 4 threads. 
+Each thread must process a different portion of the array (100 elements per thread) 
+and count how many of those integers are even numbers.
+
+The result must be accumulated into a shared global variable total_even.
+
+Because multiple threads update this variable, the program 
+must protect the critical section using a mutex.
+
+At the end, the main thread must print the total number 
+of even integers in the array.

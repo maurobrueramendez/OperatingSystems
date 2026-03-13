@@ -1,0 +1,15 @@
+Write a program that:
+
+    receives a file path in argv[1]
+
+    opens the file using system calls only
+
+    reads the file in blocks of at most 1024 bytes
+
+    counts the total number of bytes in the file
+
+    writes the file contents to standard output
+
+    prints the total number of bytes at the end
+
+You may not use fopen, fread, or other stdio file functions.
