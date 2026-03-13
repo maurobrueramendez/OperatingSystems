@@ -1,0 +1,4 @@
+Create a program that forks a child. 
+The child executes ls. 
+Its output is redirected to a pipe. 
+The parent reads all output until EOF and writes it into out.txt.

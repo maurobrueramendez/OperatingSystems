@@ -1,0 +1,4 @@
+There is a shared variable flag = 1.
+Create 10 threads.
+Exactly one thread should successfully change flag from 1 to 0, and print its thread id.
+The others should see that flag is already 0 and do nothing.

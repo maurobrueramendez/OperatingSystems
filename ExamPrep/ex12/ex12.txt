@@ -1,0 +1,10 @@
+There is an array A[10] in which each position has a random value from 0 to 2.
+Implement a threaded “particle” move operation: void * move(void *arg), 
+where arg is a struct containing two integers i and j, 
+so that if in cell i there are more than 0 particles, 
+the function moves one particle from cell i to cell j. 
+Avoid race conditions. To obtain the maximum grade, 
+avoid active waiting (pthread_cond_t). 
+Hint: create an array of 10 booleans that keeps track 
+whether the i-th position is being accessed. Protect the array 
+with a lock and a condition variable.
